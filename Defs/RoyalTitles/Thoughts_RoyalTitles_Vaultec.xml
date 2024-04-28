@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================= Thoughts related to royal titles ============================= -->
+
+  <ThoughtDef>
+    <defName>GainedTitleValtec</defName>
+    <durationDays>7</durationDays>
+    <thoughtClass>Thought_MemoryRoyalTitle</thoughtClass>
+    <nullifyingTraits><li>Ascetic</li></nullifyingTraits>
+    <stages>
+      <li>
+        <label>Получен {TITLE} титул</label>
+        <description>Мне присвоено звание {TITLE}. Мне нравится признание!</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>LostTitleValtec</defName>
+    <durationDays>7</durationDays>
+    <thoughtClass>Thought_MemoryRoyalTitle</thoughtClass>
+    <nullifyingTraits><li>Ascetic</li></nullifyingTraits>
+    <stages>
+      <li>
+        <label>Потеряно {TITLE} звание</label>
+        <description>Я потерял {TITLE} звание.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TitleApparelRequirementNotMet</defName>
+    <workerClass>ThoughtWorker_RoyalTitleApparelRequirementNotMet</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits><li>Ascetic</li></nullifyingTraits>
+    <developmentalStageFilter>Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Хочу {TITLE_label}-одежду</label>
+        <description>{TITLE_indefinite} как я, должен быть одет в одежду, соответствующую моему статусу:\n\n{0}</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TitleApparelMinQualityNotMet</defName>
+    <workerClass>ThoughtWorker_RoyalTitleApparelMinQualityNotMet</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits><li>Ascetic</li></nullifyingTraits>
+    <stages>
+      <li>
+        <label>Хочу {TITLE_label}-качественную одежду</label>
+        <description>{TITLE_indefinite} мне, как и мне, следует носить одежду только {QUALITY} качества и выше.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TitleThroneroomRequirementsNotMet</defName>
+    <workerClass>ThoughtWorker_ThroneRoomRequirementsNotMet</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits><li>Ascetic</li></nullifyingTraits>
+    <stages>
+      <li>
+        <label>недостойный тронный зал</label>
+        <description>Меня {TITLE_indefinite}, и эти предметы должны быть в моем тронном зале.:\n\n{0}</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TitleBedroomRequirementsNotMet</defName>
+    <workerClass>ThoughtWorker_BedroomRequirementsNotMet</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits><li>Ascetic</li></nullifyingTraits>
+    <stages>
+      <li>
+        <label>недостойная спальня</label>
+        <description>{TITLE_indefinite} как и я, заслуживает спальню, отвечающую этим требованиям:\n\n{0}</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TitleNoThroneRoom</defName>
+    <workerClass>ThoughtWorker_NoThroneroom</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits><li>Ascetic</li></nullifyingTraits>
+    <stages>
+      <li>
+        <label>нет тронного зала</label>
+        <description>Что такое королевская особа без тронного зала?</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>TitleNoPersonalBedroom</defName>
+    <workerClass>ThoughtWorker_NoPersonalBedroom</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits><li>Ascetic</li></nullifyingTraits>
+    <stages>
+      <li>
+        <label>нет личной спальни</label>
+        <description>{TITLE_indefinite} должна быть личная спальня.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

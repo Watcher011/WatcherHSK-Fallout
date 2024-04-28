@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Guard -->
+
+  <VaultecGuard.label>Солдат Анклава</VaultecGuard.label>
+  <VaultecGuard.labelPlural>Солдат Анклава</VaultecGuard.labelPlural>
+
+
+  <!-- Striker -->
+
+  <VaultecStriker.label>Штурмовик Анклава</VaultecStriker.label>
+  <VaultecStriker.labelPlural>Штурмовик Анклава</VaultecStriker.labelPlural>
+
+
+  <!-- Protector -->
+
+  <VaultecProtector.label>Защитник Анклава</VaultecProtector.label>
+  <VaultecProtector.labelPlural>Защитник Анклава</VaultecProtector.labelPlural>
+
+
+  <!-- Demolisher -->
+
+  <VaultecDemolisher.label>Инженер Анклава</VaultecDemolisher.label>
+  <VaultecDemolisher.labelPlural>Инженер Анклава</VaultecDemolisher.labelPlural>
+
+
+  <!-- Scout -->
+
+  <VaultecScout.label>Скаут Анклава</VaultecScout.label>
+  <VaultecScout.labelPlural>Скаут Анклава</VaultecScout.labelPlural>
+
+
+  <!-- Destroyer -->
+
+  <VaultecDestroyer.label>Ликвидатор Анклава</VaultecDestroyer.label>
+  <VaultecDestroyer.labelPlural>Ликвидатор Анклава</VaultecDestroyer.labelPlural>
+
+
+  <!-- Sentinel -->
+
+  <VaultecSentinel.label>Страж Анклава</VaultecSentinel.label>
+  <VaultecSentinel.labelPlural>Страж Анклава</VaultecSentinel.labelPlural>
+
+  <Vaultec_Common_Trader.label>Торговец Волт-тек</Vaultec_Common_Trader.label>
+  <Vaultec_Common_Trader.labelPlural>Торговец Волт-тек</Vaultec_Common_Trader.labelPlural>
+
+
+</LanguageData>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="BaseMechanoidRecipe" Abstract="True">
+    <jobString>Gestating mech.</jobString>
+    <workAmount>1800</workAmount>
+    <gestationCycles>1</gestationCycles>
+    <formingTicks>120000</formingTicks><!-- 2 days -->
+    <mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
+    <workSpeedStat>MechFormingSpeed</workSpeedStat>
+    <soundWorking>MechGestatorCycle_Initiating</soundWorking>
+  </RecipeDef>
+
+  
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>MechMrHandy</defName>
+    <label>Создать Мистера Помощника</label>
+    <description>Создаёт Мистера Помощника.</description>
+    <researchPrerequisite>VaulTec</researchPrerequisite>
+    <ingredients Inherit="False">
+				<li>
+					<filter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+						</categories>
+					</filter>
+					<count>85</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Electronics</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Mechanism</li>
+						</thingDefs>
+					</filter>
+					<count>4</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Isotop</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SubcoreHigh</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
+			<fixedIngredientFilter>
+				<categories>
+					<li>SLDBar</li>
+					<li>USLDBar</li>
+				</categories>
+				<thingDefs>
+					<li>Electronics</li>
+					<li>ComponentIndustrial</li>
+					<li>Mechanism</li>
+					<li>Isotop</li>
+					<li>SubcoreHigh</li>
+				</thingDefs>
+			</fixedIngredientFilter>
+    <products>
+      <Mech_MrHandy>1</Mech_MrHandy>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_MrHandy</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+
+</Defs>

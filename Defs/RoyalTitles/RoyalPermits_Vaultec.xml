@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================= Permits from royal titles ============================= -->
+
+  <RoyalTitlePermitDef>
+    <defName>TradeSettlement</defName>
+    <label>торговля с населенными пунктами Волт-тек</label>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef>
+    <defName>TradeOrbital</defName>
+    <label>торговля с орбитальными торговцами Волт-тек</label>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef>
+    <defName>TradeCaravan</defName>
+    <label>торговля с караванами Волт-тек</label>
+  </RoyalTitlePermitDef>
+
+
+  <!-- ============================= Faction permits ============================= -->
+  <RoyalTitlePermitDef Name="DropResourcesBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <faction>Vaultec</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>20</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>SimpleStimpackDrop</defName>
+    <label>Запрос Стимпаков</label>
+    <description>Запрос на ящик стимпаков (25) штук.</description>
+    <minTitle>corporal</minTitle>
+    <faction>Vaultec</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <SimpleStimpack>25</SimpleStimpack>
+      </itemsToDrop>
+      <favorCost>3</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>FoodDrop</defName>
+    <label>Запрос провизии</label>
+    <description>Запрос ящика сухпая (55) штук.</description>
+	 <faction>Vaultec</faction>
+    <minTitle>specialist</minTitle>
+    <uiPosition>(0,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <MealSurvivalPack>55</MealSurvivalPack>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+   <RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>COLADrop</defName>
+    <label>Запрос ядер колы</label>
+    <description>12 бутылок квантовой ядер колы.</description>
+	 <faction>Vaultec</faction>
+    <minTitle>corporal</minTitle>
+    <uiPosition>(1,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <NukaColaQuantum>12</NukaColaQuantum>
+      </itemsToDrop>
+      <favorCost>2</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+<RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>ArmorDrop</defName>
+    <label>Запрос снаряжения и вооружения</label>
+    <description>Набор брони Анклава ,Лазерная винтовка и 480 патронов.</description>
+	 <faction>Vaultec</faction>
+    <minTitle>GeneralManager</minTitle>
+	 <cooldownDays>450</cooldownDays>
+    <uiPosition>(0,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Apparel_HellPowerArmor>1</Apparel_HellPowerArmor>
+		 <Apparel_HellPowerArmorHelmet>1</Apparel_HellPowerArmorHelmet>
+		 <Gun_ChargeRifle>1</Gun_ChargeRifle>
+		 <Ammo_6x24mmCharged>480</Ammo_6x24mmCharged>
+      </itemsToDrop>
+      <favorCost>8</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="DropResourcesBase">
+    <defName>TurelDrop</defName>
+    <label>Запрос стационарного вооружения</label>
+    <description>Пулемёт M240 ,7.62x51mm 800шт.</description>
+	 <faction>Vaultec</faction>
+    <minTitle>specialist</minTitle>
+	 <cooldownDays>450</cooldownDays>
+    <uiPosition>(1,3)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Turret_M240B>2</Turret_M240B>
+		 <Ammo_762x51mmNATO_FMJ>800</Ammo_762x51mmNATO_FMJ>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+ <RoyalTitlePermitDef>
+    <defName>CallVaultecLaborerTeam</defName>
+    <label>Запрос ремонтной бригады</label>
+    <description>Запрос 4х работников на 8 дней.</description>
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+     <minTitle>specialist</minTitle>
+     <faction>Vaultec</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,1)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>VaultecScout</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <aidDurationDays>8</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+ <RoyalTitlePermitDef>
+    <defName>CallVaultecTeamSimpel</defName>
+    <label>Запрос Группы Разведки</label>
+    <description>Вызов 4х бойцов в лёгкой броне на 24 часа.</description>
+      <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>GeneralManager</minTitle>
+    <faction>Vaultec</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,2)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>VaultecScout</pawnKindDef>
+      <pawnCount>5</pawnCount>
+      <aidDurationDays>1</aidDurationDays>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+  </RoyalTitlePermitDef>
+
+
+
+  <RoyalTitlePermitDef>
+    <defName>CallVaultecTeam</defName>
+    <label>Запрос Ударной Группы</label>
+    <description>Вызов 4х бойцов в силовой броне на 24 часа.</description>
+      <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>GeneralManager</minTitle>
+    <faction>Vaultec</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,2)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>VaultecDestroyer</pawnKindDef>
+      <pawnCount>5</pawnCount>
+      <aidDurationDays>1</aidDurationDays>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+  </RoyalTitlePermitDef>
+
+
+
+  <RoyalTitlePermitDef>
+    <defName>CallOrbitalStrike</defName>
+    <label>Запрос орбитального удара</label>
+    <description>Удар с орбиты.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <minTitle>officer</minTitle>
+    <faction>Vaultec</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,4)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>5.9</radius>
+      <explosionRadiusRange>10.9</explosionRadiusRange>
+      <explosionCount>1</explosionCount>
+      <intervalTicks>60</intervalTicks>
+      <warmupTicks>120</warmupTicks>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>CallOrbitalSalvo</defName>
+    <label>Запрос Арт обстрела</label>
+    <description>-----.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+   <minTitle>officer</minTitle>
+    <faction>Vaultec</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>CallOrbitalStrike</prerequisite>
+    <cooldownDays>60</cooldownDays>
+    <uiPosition>(1,4)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>40.9</radius>
+      <explosionRadiusRange>5.9</explosionRadiusRange>
+      <explosionCount>20</explosionCount>
+      <intervalTicks>70</intervalTicks>
+      <warmupTicks>120</warmupTicks>
+    </royalAid>
+  </RoyalTitlePermitDef>
+ 
+  
+</Defs>

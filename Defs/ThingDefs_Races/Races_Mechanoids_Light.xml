@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+    <!-- Mr.Handy -->    
+    <ThingDef ParentName="LightMechanoid">
+      <defName>Mech_MrHandy</defName>
+      <label>Мистер Помощник</label>
+      <description>Были разработаны компанией «Дженерал Атомикс Интернешнл»; для передвижения используют реактивный двигатель, обладают несколькими манипуляторами и сенсорами слежения с обзором более 270 градусов; их основной функцией было ведение домашнего хозяйства, например, приготовление пищи или выгуливание собаки. Мистер Помощник мог оборонять как себя, так и дом хозяев; поздние модели оборудовались циркулярной пилой и огнемётом.</description>
+      <statBases>
+        <MoveSpeed>6.8</MoveSpeed>
+		<MarketValue>1600</MarketValue>
+      <EnergyShieldRechargeRate>0.25</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>4.5</EnergyShieldEnergyMax>
+      <BandwidthCost>1</BandwidthCost>
+      <ControlTakingTime>18</ControlTakingTime>
+      <EMPResistance>0.95</EMPResistance>
+      </statBases>
+	  <tools>
+	   <li Class="CombatExtended.ToolCE">
+					<label>Пила</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>36</power>
+					<cooldownTime>0.85</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<chanceFactor>0.1</chanceFactor>
+					<armorPenetrationSharp>5</armorPenetrationSharp>
+		     		<armorPenetrationBlunt>15</armorPenetrationBlunt>
+				</li>
+					<li Class="CombatExtended.ToolCE">
+					<label>Шипы</label>
+					<capacities>
+						<li>Demolish</li>
+					</capacities>
+					<power>27</power>
+					<cooldownTime>3.0</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<armorPenetrationSharp>5</armorPenetrationSharp>
+		     		<armorPenetrationBlunt>15</armorPenetrationBlunt>
+					<chanceFactor>0.2</chanceFactor>
+				</li>
+         </tools>
+      <race>
+        <mechEnabledWorkTypes>
+          <li>Doctor</li>
+		  <li>Cleaning</li>
+          <li>Firefighter</li>
+		   <li>Crafting</li>
+          <li>Cooking</li>
+		   <li>PlantCutting</li>
+          <li>Growing</li>
+        </mechEnabledWorkTypes>
+		<mechWorkTypePriorities>
+          <Doctor>1</Doctor>
+        </mechWorkTypePriorities>
+		 <body>Apocriton</body>
+        <lifeStageAges>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>0</minAge>
+            <soundWounded>Pawn_Mech_Paramedic_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_Paramedic_Death</soundDeath>
+            <soundCall>Pawn_Mech_Paramedic_Call</soundCall>
+          </li>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>100</minAge>
+            <soundWounded>Pawn_Mech_Paramedic_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_Paramedic_Death</soundDeath>
+            <soundCall>Pawn_Mech_Paramedic_Call</soundCall>
+          </li>
+        </lifeStageAges>
+      </race>
+	   <butcherProducts>
+			<TitaniumBar>4</TitaniumBar>
+			<DepletedUranium>5</DepletedUranium>
+			<CarbonAlloy>4</CarbonAlloy>
+		</butcherProducts>
+    </ThingDef>
+  
+    <PawnKindDef ParentName="LightMechanoidKind">
+      <defName>Mech_MrHandy</defName>
+      <label>Мистер Помощник</label>
+      <race>Mech_MrHandy</race>
+      <allowInMechClusters>false</allowInMechClusters>
+      <lifeStages>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Pawn/Mechanoid/MrHandy</texPath>
+          
+               <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.7</drawSize>
+            <shadowData>
+              <volume>(0.3, 0.4, 0.3)</volume>
+              <offset>(0,0,-0.25)</offset>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Pawn/Mechanoid/MrHandy</texPath>
+              <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.7</drawSize>
+            <shadowData>
+              <volume>(0.3, 0.4, 0.3)</volume>
+              <offset>(0,0,-0.25)</offset>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+      </lifeStages>
+      <abilities>
+	    <li>FireSpew</li>
+        <li>FirefoampopMech</li>
+        <li>LongjumpMechLauncher</li>
+      </abilities>
+    </PawnKindDef>
+
+</Defs>

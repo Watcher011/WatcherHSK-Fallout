@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>Vaultec</defName>
+    <label>Волт-Тек</label>
+    <categoryTag>Vaultec</categoryTag>
+    <description>В задачи «Волт-Тек» всегда входили обучение и защита наших сограждан от Коммунистической угрозы.</description>
+    <pawnSingular>Волт-Тек</pawnSingular>
+    <pawnsPlural>Волт-Теки</pawnsPlural>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <canSiege>false</canSiege>
+	<earliestRaidDays>225</earliestRaidDays>
+    <canStageAttacks>false</canStageAttacks>
+	<mustStartOneEnemy>false</mustStartOneEnemy>
+	<naturalEnemy>false</naturalEnemy>
+    <leaderTitle>Смотритель</leaderTitle>
+    <royalFavorLabel>Репутация</royalFavorLabel>
+    <royalFavorIconPath>UI/Icons/Vaultec</royalFavorIconPath>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <factionIconPath>World/WorldObjects/Expanding/Vaultec</factionIconPath>
+    <factionNameMaker>NamerFactionVaultec</factionNameMaker>
+    <settlementNameMaker>NamerSettlementVaultec</settlementNameMaker>
+    <allowedCultures><li>VaultecCulture</li></allowedCultures>
+   <requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Strict</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Moderate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Mild</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Free</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_AlwaysMans</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_KeepNames</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_UsuallyWomans</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_UsuallyMans</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_AlwaysWomans</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_NonMeat_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_NonMeat_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_NonMeat_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_DontCare</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Required</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_None</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_ExtremelySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_VerySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Slow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Normal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Fast</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Apostasy_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Apostasy_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Apostasy_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_HorribleSellOK</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_Acceptable</li>
+		</disallowedPrecepts>
+    <xenotypeSet>
+      <xenotypeChances>
+        <OE_Ghoul MayRequire="Ludeon.RimWorld.Biotech">0.3</OE_Ghoul>
+      </xenotypeChances>
+    </xenotypeSet>
+   <permanentEnemyToEveryoneExcept>
+      <li>PlayerTribe</li>
+      <li>PlayerColony</li>
+	  <li>PlayerNova</li>
+	  <li>PlayerExiled</li>
+	  <li>PlayerNorbal</li>
+	  <li>PlayerSurvivor</li>
+	  <li>OrassanPlayerColony</li>
+	  <li>NuclearColonySurvivor</li>
+	  <li>ChjPlayerAndroidColony</li>
+	<li>ChjAndroidEnclave</li>
+	<li>AsariPlayerColony</li>
+	<li>RK_PlayerFaction</li>
+    </permanentEnemyToEveryoneExcept>
+    <techLevel>Ultra</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>ImperialCommon</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <apparelStuffFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+        <li>Fabric</li>
+      </stuffCategoriesToAllow>
+      <disallowedThingDefs>
+        <li>DevilstrandCloth</li>
+      </disallowedThingDefs>
+    </apparelStuffFilter>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <colorSpectrum>
+      <li>(0.85, 0.85, 0.75)</li>
+    </colorSpectrum>
+    <fixedLeaderKinds>
+      <li>Vaultec_Common_Warden</li>
+    </fixedLeaderKinds>
+    <royalTitleTags>
+      <li>VaultecTitle</li>
+    </royalTitleTags>
+    <baseTraderKinds>
+      <li>Base_Vaultec_Standard</li>
+    </baseTraderKinds>
+    <caravanTraderKinds>
+      <li>Vaultec_Caravan_TraderGeneral</li>
+	   <li>Vaultec_Caravan_TributeCollector</li>
+    </caravanTraderKinds>
+    <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+    <royalTitleInheritanceRelations>
+      <li>Child</li>
+      <li>Grandchild</li>
+      <li>GreatGrandchild</li>
+      <li>NephewOrNiece</li>
+      <li>Spouse</li>
+      <li>Sibling</li>
+      <li>HalfSibling</li>
+      <li>Cousin</li>
+      <li>Parent</li>
+      <li>UncleOrAunt</li>
+    </royalTitleInheritanceRelations>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <raidLootMaker>VaultecRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(500, 100)</li> <!-- Can always use relatively strong pawns, because empire doesn't really have weak ones -->
+        <li>(1000, 150)</li>
+        <li>(2000, 250)</li>
+        <li>(2001, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <!-- Traders -->
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Vaultec_Common_Trader>1</Vaultec_Common_Trader>
+        </traders>
+        <carriers>
+		<Muffalo>4</Muffalo>
+        </carriers>
+        <guards>
+          <Thrasher>3</Thrasher>
+          <Pirate>10</Pirate>
+          <Grenadier_Tox>2</Grenadier_Tox>
+          <Grenadier_Destructive>0.25</Grenadier_Destructive>
+          <Mercenary_SlasherTox>3</Mercenary_SlasherTox>
+          <Mercenary_Slasher>1</Mercenary_Slasher>
+          <Mercenary_Sniper>10</Mercenary_Sniper>
+          <Mercenary_GunnerTox>10</Mercenary_GunnerTox>
+          <Mercenary_Gunner>1</Mercenary_Gunner>
+          <Mercenary_EliteTox>10</Mercenary_EliteTox>
+          <Mercenary_Elite>1</Mercenary_Elite>
+          <PirateBossTox>10</PirateBossTox>
+        </guards>
+      </li>
+      <li>
+        <!-- Normal fights -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <VaultecGuard>5</VaultecGuard>
+          <VaultecStriker>3.5</VaultecStriker>
+          <VaultecProtector>2</VaultecProtector>
+          <VaultecDemolisher>4</VaultecDemolisher>
+		    <Mech_MrHandy>3</Mech_MrHandy>
+        </options>
+      </li>
+      <li>
+        <!-- breach fights -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <VaultecScout>2</VaultecScout>
+          <VaultecDemolisher>5</VaultecDemolisher>
+          <VaultecProtector>3.5</VaultecProtector>
+          <VaultecStriker>2</VaultecStriker>
+          <VaultecDestroyer>4</VaultecDestroyer>
+		    <Mech_MrHandy>3</Mech_MrHandy>
+        </options>
+      </li>
+      <li>
+        <!-- Base defense, mainly ranged with melee mix-ins -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <VaultecScout>5</VaultecScout>
+          <VaultecSentinel>3.5</VaultecSentinel>
+          <VaultecDestroyer>2</VaultecDestroyer>
+          <VaultecDemolisher>4</VaultecDemolisher>
+		    <Mech_MrHandy>3</Mech_MrHandy>
+      </options>
+      </li>
+    </pawnGroupMakers>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>70</configurationListOrderPriority>
+    <disallowedRaidAgeRestrictions>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+    </disallowedRaidAgeRestrictions>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>VaultecRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+            <li>MealSurvivalPack</li>
+			<li>NukaColaQuantum</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+  
+  <!-- =============================== Names =============================== -->
+ <RulePackDef>
+    <defName>NamerFactionVaultec</defName>
+    <rulePack>
+      <rulesStrings>
+       <li>empire->Vaultec</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+ <RulePackDef>
+    <defName>NamerSettlementVaultec</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>townend->Shelter 101</li>
+        <li>townend->Shelter 102</li>
+        <li>townend->Shelter 103</li>
+        <li>townend->Shelter 104</li>
+        <li>townend->Shelter 105</li>
+        <li>townend->Shelter 106</li>
+        <li>townend->Shelter 107</li>
+        <li>townend->Shelter 108</li>
+        <li>townend->Shelter 109</li>
+        <li>townend->Shelter 110</li>
+        <li>townend->Shelter 111</li>
+        <li>townend->Shelter 112</li>
+        <li>townend->Shelter 113</li>
+        <li>townend->Shelter 114</li>
+        <li>townend->Shelter 115</li>
+        <li>townend->Shelter 116</li>
+        <li>townend->Shelter 117</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

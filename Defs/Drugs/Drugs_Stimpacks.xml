@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>SimpleStimpack</defName>
+        <label>Стимулятор</label>
+        <description>Одноразовый шприц серого цвета с манометром. Содержит жидкость красного цвета из крови и антисептика.</description>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>25</stackLimit>
+        <descriptionHyperlinks>
+            <HediffDef>Hediff_SimpleStimpack</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/Stimpak</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>80</WorkToMake>
+            <Mass>0.12</Mass>
+            <Flammability>0.4</Flammability>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <ingestSound>injector</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.16,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Ввоод {0}</ingestCommandString>
+            <ingestReportString>Ввоодит {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <nurseable>true</nurseable>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>Hediff_SimpleStimpack</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Stimpak</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+        <costList>
+            <Neutroamine>10</Neutroamine>
+            <HemogenPack>2</HemogenPack>
+            <MedicineIndustrial>1</MedicineIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>220</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

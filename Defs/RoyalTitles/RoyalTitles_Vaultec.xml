@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <RoyalTitleDef Abstract="True" Name="BaseVaultecTitle" >
+    <tags>
+      <li>VaultecTitle</li>
+    </tags>
+    <awardThought>GainedTitleValtec</awardThought>
+    <lostThought>LostTitleValtec</lostThought>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseVaultecTitle">
+     <defName>rookie</defName>
+    <label>"Волт-Тек"Новобранеец</label>
+    <description>Вы оказали незначительную услугу для корпорации Волт-тек.</description>
+    <seniority>0</seniority>
+    <favorCost>1</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+		<permitPointsAwarded>1</permitPointsAwarded>
+  </RoyalTitleDef>
+
+
+  <RoyalTitleDef ParentName="BaseVaultecTitle">
+    <defName>Private</defName>
+    <label>"Волт-Тек"Знакомый</label>
+    <description>Вы оказали череду добрых посступков и работники Волт-тек что-то про вас слышали</description>
+    <seniority>100</seniority>
+    <favorCost>3</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <commonality>1</commonality>
+	<permitPointsAwarded>1</permitPointsAwarded>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseVaultecTitle">
+     <defName>specialist</defName>
+    <label>"Волт-Тек"Курьер</label>
+    <description>После длительных взаимовыгодных отношений руководиели Волт-тек могут доверить вам мелкие поручения</description>
+    <seniority>200</seniority>
+    <favorCost>6</favorCost>
+    <minExpectation>Moderate</minExpectation>
+    <commonality>1</commonality>
+    <canBeInherited>False</canBeInherited>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+	<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseVaultecTitle">
+   <defName>corporal</defName>
+    <label>"Волт-Тек"Подручный</label>
+    <labelFemale>Подручная"Волт-Тек"</labelFemale>
+    <description>Вы заслужили доверие небольшого отдела Волт-тек.Они более расположены к вам.Вам открыт внутренний рынок Волт-тек</description>
+    <seniority>300</seniority>
+    <favorCost>9</favorCost>
+    <minExpectation>High</minExpectation>
+<requiredMinimumApparelQuality>Poor</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>1600</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+	<requiredApparel>
+           <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+         </li>
+    </requiredApparel>
+	
+	<bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>40</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+	  
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>SculptureSmall</li>
+          <li>SculptureLarge</li>
+          <li>SculptureGrand</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		<li>TubeTelevision</li>
+		<li>FlatscreenTelevision</li>
+		<li>MegascreenTelevision</li>
+		        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <commonality>1</commonality>
+	<permits>
+      <li>TradeCaravan</li>
+    </permits>
+    <canBeInherited>False</canBeInherited>
+    <permitPointsAwarded>1</permitPointsAwarded>
+	    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseVaultecTitle">
+    <defName>sergeant</defName>
+    <label>"Волт-Тек"Помощник убежища</label>
+    <description>Вы выполнили огромное количество мелких поручений.О вас наслышины и соседние отделения Волт-тек.К вам обращаются с уважением.</description>
+    <seniority>400</seniority>
+    <favorCost>12</favorCost>
+    <minExpectation>SkyHigh</minExpectation>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>False</canBeInherited>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+    <decreeMentalBreakCommonality>4</decreeMentalBreakCommonality>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>50</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>SculptureSmall</li>
+          <li>SculptureLarge</li>
+          <li>SculptureGrand</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>SculptureSmall</li>
+          <li>SculptureLarge</li>
+          <li>SculptureGrand</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		<li>TubeTelevision</li>
+		<li>FlatscreenTelevision</li>
+		<li>MegascreenTelevision</li>
+		        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li><li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li></grantedAbilities>
+    <speechCooldown>1200000</speechCooldown>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseVaultecTitle">
+    <defName>GeneralManager</defName>
+    <label>"Волт-Тек"Колега</label>
+    <description>Вас считают шестерней огромного механизма под названием Волт-тек.</description>
+    <seniority>500</seniority>
+    <favorCost>15</favorCost>
+    <minExpectation>Noble</minExpectation>
+    <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>2800</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>False</canBeInherited>
+    <suppressIdleAlert>true</suppressIdleAlert>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+    <decreeMentalBreakCommonality>8</decreeMentalBreakCommonality>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>70</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+	        <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>SculptureLarge</li>
+          <li>SculptureGrand</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>SculptureSmall</li>
+          <li>SculptureLarge</li>
+          <li>SculptureGrand</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		<li>FlatscreenTelevision</li>
+		<li>MegascreenTelevision</li>
+		        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li><li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li></grantedAbilities>
+    <speechCooldown>900000</speechCooldown>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseVaultecTitle">
+     <defName>officer</defName>
+    <label>"Волт-Тек"Друг Убежища</label>
+    <labelFemale>Подруга Убежища"Волт-Тек"</labelFemale>
+    <description>Вам открыты двери Волт-тек ,а ваш вклад не оценим</description>
+    <seniority>600</seniority>
+    <favorCost>18</favorCost>
+    <minExpectation>Royal</minExpectation>
+    <requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>3500</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>75</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>False</canBeInherited>
+    <suppressIdleAlert>true</suppressIdleAlert>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
+    <decreeMentalBreakCommonality>12</decreeMentalBreakCommonality>
+    <permitPointsAwarded>1</permitPointsAwarded>
+	    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+      <li>Animals</li>
+    </disabledWorkTags>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>80</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+		<li>MegascreenTelevision</li>
+		        </things>
+      </li>
+	  	        <li Class="RoomRequirement_Thing" MayRequire="Ludeon.RimWorld.Ideology">
+					<thingDef>BiosculpterPod</thingDef>
+		      </li>
+		        <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>SculptureGrand</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>SculptureSmall</li>
+          <li>SculptureLarge</li>
+          <li>SculptureGrand</li>
+        </things>
+      </li>
+
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li><li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li></grantedAbilities>
+	
+    <speechCooldown>600000</speechCooldown>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <!-- ============== Corporation titles - NPC only executive ============================= -->
+
+
+  <RoyalTitleDef Abstract="True" Name="BaseVaultecTitleNPC" ParentName="BaseVaultecTitle" >
+    <minExpectation>Royal</minExpectation>
+    <requiredMinimumApparelQuality>Masterwork</requiredMinimumApparelQuality>
+    <suppressIdleAlert>true</suppressIdleAlert>
+    <disabledJoyKinds>
+      <li>Gaming_Dexterity</li>
+    </disabledJoyKinds>
+    <disabledWorkTags>
+      <li>Commoner</li>
+    </disabledWorkTags>
+	    <permits>
+      <li>TradeOrbital</li>
+    </permits>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>80</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+	  		        <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>SculptureGrand</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>SculptureSmall</li>
+          <li>SculptureLarge</li>
+          <li>SculptureGrand</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>SculptureSmall</li>
+          <li>SculptureLarge</li>
+          <li>SculptureGrand</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+		  	        <li Class="RoomRequirement_Thing" MayRequire="Ludeon.RimWorld.Ideology">
+					<thingDef>BiosculpterPod</thingDef>
+		      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+	  	   <li Class="RoomRequirement_Thing">
+		<thingDef>MegascreenTelevision</thingDef>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li><li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li></grantedAbilities>
+    <speechCooldown>600000</speechCooldown>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseVaultecTitleNPC">
+    <defName>Colonel</defName>
+    <label>Администратор"Волт-Тек"</label>
+    <labelFemale>Администратор"Волт-Тек"</labelFemale>
+    <description>Администратор - одна из руководящих должностей Волт-тек.Управляют сетью убежищь и следят за распределением ресурсов.</description>
+    <seniority>700</seniority>
+    <commonality>1</commonality>
+    <recruitmentResistanceOffset>125</recruitmentResistanceOffset>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseVaultecTitleNPC">
+    <defName>Recruiter</defName>
+    <label>Вербовщик"Волт-Тек"</label>
+    <description>Вербовщик оценивает преспективность кандидатов на должность и проверяет их лояльность</description>
+    <seniority>800</seniority>
+    <commonality>0.6</commonality>
+    <recruitmentResistanceOffset>150</recruitmentResistanceOffset>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseVaultecTitleNPC">
+   <defName>Warden</defName>
+    <label>Верховный Смотритель"Волт-Тек"</label>
+    <labelFemale>Верховная Смотрительница"Волт-Тек"</labelFemale>
+    <description>Глава местного отдела корпорации Волт-тек.</description>
+    <seniority>900</seniority>
+    <commonality>0.1</commonality>
+    <recruitmentResistanceOffset>200</recruitmentResistanceOffset>
+    <replaceOnRecruited>Recruiter</replaceOnRecruited>
+  </RoyalTitleDef>
+
+  <!-- Chairman should never appear in the game in any way, it's just here for completeness on UI lists etc. -->
+  <RoyalTitleDef ParentName="BaseVaultecTitleNPC">
+    <defName>Chairman</defName>
+    <label>Директор"Волт-Тек"</label>
+    <labelFemale>Директриса"Волт-Тек"</labelFemale>
+    <description>Глава что управляет всей корпорацией Вол-тек.</description>
+    <seniority>1000</seniority>
+    <commonality>0</commonality>
+  </RoyalTitleDef>
+
+</Defs>

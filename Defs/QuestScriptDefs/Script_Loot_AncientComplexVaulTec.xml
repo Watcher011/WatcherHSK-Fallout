@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef Name="AncientVaultComplexBase">
+    <defName>OpportunitySite_AncientComplex_VaultTec</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <rootMinPoints>350</rootMinPoints>
+    <autoAccept>true</autoAccept>
+    <defaultChallengeRating>1</defaultChallengeRating>
+    <isRootSpecial>true</isRootSpecial>
+    <questNameRules>
+      <rulesStrings>
+        
+        <!-- quest name -->
+        <li>questName(p=3)->[complexAdj] комплекс ВолтТек</li>
+        <li>questName->комплекс ВолтТек</li>
+
+        <li>complexAdj->Секретный</li>
+        <li>complexAdj->Древний</li>
+        <li>complexAdj->Старый</li>
+        <li>complexAdj->Скрытый</li>
+        <li>complexAdj->Забытый</li>
+        <li>complexAdj->Покинутый</li>
+        <li>complexAdj->Вымерший</li>
+
+      
+
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->Вы обнаружили расположение заброшеного убежища корпорации ВолтТек.\n\nТам вас могут поджидать как сокровища так и охраные системы со спятившим ИИ так и ужастные монстры.</li>
+        
+        <!-- Snippets -->
+        <li>discoveryDesc(discovered==false)->learned</li>
+        <li>discoveryDesc(discovered==true)->determined the location</li>
+
+      </rulesStrings>
+    </questDescriptionRules>
+    <questDescriptionAndNameRules>
+      <rulesStrings>
+      </rulesStrings>
+    </questDescriptionAndNameRules>
+     <root Class="QuestNode_Root_Hack_AncientComplex" />
+  </QuestScriptDef>
+</Defs>

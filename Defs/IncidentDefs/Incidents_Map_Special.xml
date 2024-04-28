@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <IncidentDef>
+    <defName>GiveQuest_AncientComplex_vaulttec</defName>
+    <category>GiveQuest</category>
+    <label>Заброшеное убежище ВолтТек</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <letterLabel>Заброшеное убежище ВолтТек</letterLabel>
+    <questScriptDef>OpportunitySite_AncientComplex_VaultTec</questScriptDef>
+    <workerClass>IncidentWorker_GiveQuest</workerClass>
+    <baseChance>0</baseChance>
+    <requireColonistsPresent>True</requireColonistsPresent>
+  </IncidentDef>
+
+  
+</Defs>

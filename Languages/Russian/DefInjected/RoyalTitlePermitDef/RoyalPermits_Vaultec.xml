@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Permits from royal titles -->
+
+  <TradeSettlement.label>торговля с населенными пунктами</TradeSettlement.label>
+  <TradeOrbital.label>торговля с орбитальными торговцами</TradeOrbital.label>
+  <TradeCaravan.label>торговля с караванами</TradeCaravan.label>
+
+
+  <!-- Econ -->
+
+  <SimpleStimpackDrop.label>Запрос Стимпаков</SimpleStimpackDrop.label>
+  <SimpleStimpackDrop.description>Запрос на ящик стимпаков.</SimpleStimpackDrop.description>
+
+  <FoodDrop.label>Запрос провизии</FoodDrop.label>
+  <FoodDrop.description>Запрос ящика сухпая.</FoodDrop.description>
+
+  <CallVaultecTeam.label>Запрос Группы поддержки</CallVaultecTeam.label>
+  <CallVaultecTeam.description>Вызов 4х бойцов в силовой броне.</CallVaultecTeam.description>
+
+  <CallOrbitalStrike.label>Запрос орбитального удара</CallOrbitalStrike.label>
+  <CallOrbitalStrike.description>Удар с орбиты.</CallOrbitalStrike.description>
+
+  <CallOrbitalSalvo.label>Запрос Арт обстрела</CallOrbitalSalvo.label>
+  <CallOrbitalSalvo.description>Запрос на арт удар.</CallOrbitalSalvo.description>
+
+
+</LanguageData>

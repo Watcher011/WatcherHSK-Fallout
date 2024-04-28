@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
+		<defName>Stimpak</defName>
+		<label>Создание Стимпака</label>
+		<description>Изученине хим формулы для производства Стимпака от Волт-Тек.</description>
+		<baseCost>700</baseCost>
+	<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Medicine_B2</li>
+		</prerequisites>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>60.00</researchViewY>
+		<tab>Medicine_SK</tab>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>4000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Vaultec</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+
+<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
+		<defName>ColaBasinres</defName>
+		<label>Рецепт создания Ядерколы</label>
+		<description>Изученине хим формулы для производства Колы от Волт-Тек.</description>
+		<baseCost>300</baseCost>
+	<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Food_C3</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>48.00</researchViewY>
+		<tab>Medicine_SK</tab>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>4000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Vaultec</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="HitechMultiBase">
+		<defName>VaulTec</defName>
+		<label>Схема сборки Мистера Помощника</label>
+		<description>Уневерсальный робот от Волт-Тек.</description>
+		<baseCost>300</baseCost>
+	<techLevel>Industrial</techLevel>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>22.00</researchViewY>
+		<tab>Craft_SK</tab>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>2000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Vaultec</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SimpleStimpack.label>Стимулятор</SimpleStimpack.label>
+  <SimpleStimpack.description>Одноразовый шприц серого цвета с манометром. Содержит жидкость красного цвета из крови и антисептика.</SimpleStimpack.description>
+  <SimpleStimpack.ingestible.ingestCommandString>Ввоод {0}</SimpleStimpack.ingestible.ingestCommandString>
+  <SimpleStimpack.ingestible.ingestReportString>Ввоодит {0}.</SimpleStimpack.ingestible.ingestReportString>
+
+
+</LanguageData>

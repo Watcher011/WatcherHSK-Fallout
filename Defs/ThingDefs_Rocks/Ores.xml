@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+
+  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+    <defName>WeatheredOreTech</defName>
+    <label>Weathered compacted machinery</label>
+    <graphicData>
+      <texPath>Things/Ore/CompactedTech</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Ore/CompactedTech/CompactedTechA</uiIconPath>
+    <statBases>
+		  <Beauty>-4</Beauty>
+    </statBases>
+    <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ComponentIndustrial</mineableThing>
+      <mineableYield>2</mineableYield>
+	  <mineableScatterCommonality>1.00</mineableScatterCommonality>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <isNaturalRock>true</isNaturalRock>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+    <randomlyDropResources Inherit="False">
+      <li>
+        <ResourceDefName>AluminiumBar</ResourceDefName>
+        <DropProbability>2</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Plasteel</ResourceDefName>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Mechanism</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <MinMiningSkill>5</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ElectronicComponents</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <MinMiningSkill>8</MinMiningSkill>
+      </li>
+	  <li>
+        <ResourceDefName>Isotop</ResourceDefName>
+        <DropProbability>0.01</DropProbability>
+        <MinMiningSkill>5</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ComponentIndustrial</ResourceDefName>
+        <DropProbability>0.8</DropProbability>
+        <MinMiningSkill>3</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ComponentSpacer</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <MinMiningSkill>10</MinMiningSkill>
+      </li>
+    </randomlyDropResources>
+    <ThingsToReplace>
+      <li>MineableComponentsIndustrial</li>
+    </ThingsToReplace>
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.5</mineSpeedFactor>
+  </ThingDef>
+</Defs>
