@@ -1209,6 +1209,9 @@
 				<li>Work</li>
 			</untrainableTags>
 		</race>
+		 <butcherProducts>
+				<Deathclawhand>1</Deathclawhand>
+         </butcherProducts>
 		<tradeTags>
 		<li>AnimalFallout</li>
 			<li>AnimalUncommon</li>

@@ -9,7 +9,7 @@
         <techLevel>Industrial</techLevel>
         <stackLimit>5</stackLimit>
         <descriptionHyperlinks>
-            <HediffDef>Hediff_SimpleStimpack</HediffDef>
+            <HediffDef>Hediff_StealthBoy</HediffDef>
 			 <HediffDef>Hediff_StealthBoyDiff</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
