@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	
+
+	<ThingDef ParentName="ApparelSpacerBase">
+		<defName>Apparello_Stealth_suit</defName>
+		<label>Стелс-броня Марк II</label>
+		<description>Кто на свете всех невзрачней, незаметней и прозрачней?.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Apparello/Apparel/Xcoveralls/Xcom1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>		
+		<stuffCategories>
+			<li>HF</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+		    <StealthBoy>3</StealthBoy>
+			<ComponentSpacer>3</ComponentSpacer>
+			<SyntheticFibers>15</SyntheticFibers>
+			<Kevlar>15</Kevlar>
+		</costList>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.7</Flammability>
+			<Mass>2</Mass>
+			<Bulk>15</Bulk>
+			<WornBulk>5</WornBulk>
+			<EquipDelay>4.3</EquipDelay>			
+			<Insulation_Heat>5</Insulation_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>1.68</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.055</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk>13</CarryBulk>
+			<MoveSpeed>-0.07</MoveSpeed>
+			<WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
+			<GermResistance>0.11</GermResistance>
+			<GermContainment>0.11</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>2.8</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Apparello/Apparel/Xcoveralls/Xcom1</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>BrotherhoodLight</li>
+				<li>BrotherhoodMedium</li>
+				<li>SectarianLight</li>
+				<li>SectarianMedium</li>
+				<li>BrotherhoodScout</li>
+				<li>SectarianScout</li>
+				<li>SyndicateMedium</li>
+				<li>SyndicateLight</li>
+				<li>SyndicateMelee</li>
+				<li>OrionMelee</li>
+				<li>OrionMedium</li>
+				<li>OrionScout</li>
+				<li>SyndicateScout</li>
+				<li>OrionLight</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>20</weight>
+					<only>(1,1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<modExtensions>
+			<li Class="CombatExtended.ApparelHediffExtension">
+				<hediff>Hediff_StealthBoy</hediff>
+			</li>
+		</modExtensions>
+		<thingCategories>
+			<li>FullBodySuitsCat</li>
+		</thingCategories>
+        <recipeMaker>
+            <researchPrerequisite>Apparel_D1</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
+
+
+</Defs>
