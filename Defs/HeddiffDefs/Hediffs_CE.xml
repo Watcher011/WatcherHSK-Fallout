@@ -26,9 +26,9 @@
 					</li>
              </capMods>
 			<statOffsets>
-					<MoveSpeed>+0.05</MoveSpeed>
-					<MeleeHitChance>+0.1</MeleeHitChance>
-					<ShootingAccuracyPawn>+0.2</ShootingAccuracyPawn>
+					<MoveSpeed>0.05</MoveSpeed>
+					<MeleeHitChance>0.1</MeleeHitChance>
+					<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
 					<AimingDelayFactor>-0.04</AimingDelayFactor>
 					<!-- <MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier> -->
 					<Suppressability>-0.05</Suppressability>
