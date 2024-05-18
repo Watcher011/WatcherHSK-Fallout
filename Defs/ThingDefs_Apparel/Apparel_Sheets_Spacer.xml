@@ -7,7 +7,7 @@
 	<ThingDef ParentName="ApparelSpacerBase">
 		<defName>Apparello_Stealth_suit</defName>
 		<label>Стелс-броня Марк II</label>
-		<description>Кто на свете всех невзрачней, незаметней и прозрачней?.</description>
+		<description>Кто на свете всех невзрачней, незаметней и прозрачней?.Обладателя брони Марк I так и не удалось найти</description>
 		<graphicData>
 			<texPath>Things/Apparel/Apparello/Apparel/Xcoveralls/Xcom1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
