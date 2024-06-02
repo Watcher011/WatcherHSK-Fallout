@@ -192,4 +192,48 @@
 		</products>
 	</RecipeDef>
 
+
+
+	<RecipeDef ParentName="Make_NukaColaBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_NukaColaMars</defName>
+		<label>Создание Ядер колы Затмение</label>
+		<description>Синтез Ядер колы сила Затмение</description>
+		<ingredients>
+			<li>
+				<filter>
+				  <thingDefs>
+               <li>NukaColaQuantum</li>
+               </thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+				  <thingDefs>
+               <li>HemogenPack</li>
+               </thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				  <thingDefs>
+               <li>EmptyBottle</li>
+               </thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+				  <thingDefs>
+               <li>BottleCap</li>
+               </thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<products>
+			<NukaColaMars>3</NukaColaMars>
+		</products>
+	</RecipeDef>
 </Defs>

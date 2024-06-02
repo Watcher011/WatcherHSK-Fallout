@@ -75,7 +75,7 @@
 			</li>
 			<li Class="CompProperties_Glower">
         <glowRadius>2</glowRadius>
-        <glowColor>(5,5,255,1)</glowColor>
+        <glowColor>(5,5,155,1)</glowColor>
       </li>
 	     
 		</comps>
@@ -150,7 +150,7 @@
 			</li>
 			<li Class="CompProperties_Glower">
         <glowRadius>1</glowRadius>
-        <glowColor>(255,5,5,1)</glowColor>
+        <glowColor>(155,5,5,1)</glowColor>
       </li>
 	     
 		</comps>
@@ -227,7 +227,92 @@
 			</li>
 			<li Class="CompProperties_Glower">
         <glowRadius>1</glowRadius>
-        <glowColor>(255,255,5,1)</glowColor>
+        <glowColor>(155,155,5,1)</glowColor>
+      </li>
+	     
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="SweetMealBase">
+		<defName>NukaColaMars</defName>
+		<label>Ядер-Кола Затмение</label>
+		<description>Этот продукт — смесь из очищенной Квантовой Ядер-Колы и пакета крови.Дикое сочетание пришлось не всем любителям пустошей по вкусу, но те кто ценят тьму остались довольны.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/ColaBload</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(0.5,0.5)</drawSize>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stackLimit>20</stackLimit>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		 <size>(1,1)</size>
+		<thingCategories>
+			<li>Energetics</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<joy>0.22</joy>
+			<nurseable>true</nurseable>
+			  <foodType>Processed</foodType>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<tasteThought>HadColaDrink</tasteThought>
+			<chairSearchRadius>25</chairSearchRadius>
+			<joyKind>Gluttonous</joyKind>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>GoodHappy</hediffDef>
+					<severity>0.45</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Caffeine</hediffDef>
+					<severity>0.01</severity>
+					<toleranceChemical>Caffeine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.3</offset>
+					<toleranceChemical>Caffeine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RimatomicsRadiation</hediffDef>
+					<severity>0.06</severity>
+				</li>
+				 <li Class="IngestionOutcomeDoer_OffsetHemogen">
+                 <offset>0.8</offset>
+                  </li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Hediff_Cola</hediffDef>
+					<severity>1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+		
+			<li Class="CompProperties_Drug">
+				<chemical>Caffeine</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.65</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.05</existingAddictionSeverityOffset>
+				<needLevelOffset>0.5</needLevelOffset>
+				<listOrder>1100</listOrder>
+			</li>
+			<li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(155,5,5,1)</glowColor>
       </li>
 	     
 		</comps>
