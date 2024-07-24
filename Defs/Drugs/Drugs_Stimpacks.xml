@@ -21,6 +21,8 @@
             <WorkToMake>80</WorkToMake>
             <Mass>0.12</Mass>
             <Flammability>0.4</Flammability>
+			<MedicalPotency>0.80</MedicalPotency>
+			<MedicalQualityMax>0.95</MedicalQualityMax>
         </statBases>
         <ingestible>
             <drugCategory>Medical</drugCategory>

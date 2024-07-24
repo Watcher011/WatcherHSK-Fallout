@@ -118,4 +118,47 @@
 	</HediffDef>
   
 
+   
+  <HediffGiverSetDef>
+    <defName>ShroudOfInvisibilitySet</defName>
+    <hediffGivers>
+      <li Class="HediffGiver_Birthday">
+        <hediff>ShroudOfInvisibility</hediff>
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(1, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+  
+  
+  <HediffDef ParentName="ResistPainPassiveBase">
+		<defName>ShroudOfInvisibility</defName>
+		<label>Невидимость</label>
+    <labelNoun>Невидимость</labelNoun>
+		<description>.</description>
+		 <comps>
+		 <li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>9800</min>
+					<max>99900</max>
+				</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+        <li Class="HediffCompProperties">
+               <compClass>HediffComp_Invisibility</compClass>
+        </li>
+    </comps>
+		<stages>
+			<li>
+				<painFactor>0.75</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+  
+  
+   
 </Defs>
