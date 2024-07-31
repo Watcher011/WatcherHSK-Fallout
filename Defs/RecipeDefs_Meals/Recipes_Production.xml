@@ -88,6 +88,7 @@
 		<soundWorking>Recipe_Smelt</soundWorking>
 		<recipeUsers>
 			<li>TableFurnace</li>
+			<li>ElectricSmelter</li>
 			<li>EAF</li>
 		</recipeUsers>
 		<ingredients>
@@ -126,6 +127,7 @@
 		<soundWorking>Recipe_Smelt</soundWorking>
 		<recipeUsers>
 			<li>TableFurnace</li>
+			<li>ElectricSmelter</li>
 			<li>EAF</li>
 		</recipeUsers>
 		<ingredients>
